@@ -1,3 +1,4 @@
+package JAVA.Recursion;
 import java.util.Scanner;
 
 public class nested6 {

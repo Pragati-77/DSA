@@ -1,3 +1,4 @@
+package JAVA.Recursion;
 import java.util.*;
 public class head2 {
     void fun(int n)

@@ -1,3 +1,4 @@
+package JAVA.Recursion;
 import java.util.*;
 public class tail1 {
    void fun(int n)
