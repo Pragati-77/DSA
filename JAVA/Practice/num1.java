@@ -1,3 +1,4 @@
+package JAVA.Practice;
 import java.util.*;
 
 public class num1 {
@@ -11,7 +12,8 @@ public class num1 {
     {
         if(n==0)
             return;
-        else{
+        else
+        {
             System.out.println(n);
             number(n-1);
         }

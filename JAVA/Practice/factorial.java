@@ -1,23 +1,22 @@
 package JAVA.Practice;
+
 import java.util.*;
 
-public class num
-{
+public class factorial {
     public static void main(String[] args) {
-        Scanner sc= new Scanner(System.in);
+        Scanner sc=new Scanner(System.in);
         System.out.println("enter the no.");
         int n=sc.nextInt();
-        printnum(n);
+        int a=fact(n);
+        System.out.println(a);
     }
-    static void printnum(int n)
+    static int fact (int n)
     {
         if(n==0)
-            return;
+            return 1;
         else
         {
-            printnum(n-1);
-            System.out.println(n);
-
+            return n*fact(n-1);
         }
     }
 }
