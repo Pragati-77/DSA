@@ -1,22 +1,21 @@
-package JAVA.Recursion;
+// package JAVA.Recursion;
+
 import java.util.Scanner;
 
 public class fibonacii {
-   
     public static void main(String[] args) {
-        Scanner sc=new Scanner("System.in");
-        fibonacii obj=new fibonacii();
-        int f=obj.fibo(6);
-        System.out.println(f);
-        sc.close();
+        Scanner sc=new Scanner(System.in);
+        System.out.println("enter. element");
+        int n=sc.nextInt();
+        
+        System.out.println(fibo(n));
 
     }
-    int fibo(int n)
+    static int fibo(int n)
     {
         if(n<=1)
-        return n;
-        else
-        return fibo(n-2)+fibo(n-1);
+            return n;
+        return(fibo(n-1)+fibo(n-2));
     }
-
+    
 }
