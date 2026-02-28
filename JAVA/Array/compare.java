@@ -1,4 +1,4 @@
-// package JAVA.Array;
+package JAVA.Array;
 import java.util.*;
 public class compare {
     public static void main(String[] args) {
