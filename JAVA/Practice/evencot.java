@@ -1,10 +1,10 @@
-
 import java.util.*;
-public class sum {
+public class evencot {
 
     public static void main(String[] args) {
         Scanner sc=new Scanner(System.in);
-        int n,i,sum=0;
+        int c=0;
+        int n,i;
         System.out.println("enter size of array");
         n=sc.nextInt();
         int a[]=new int[n];
@@ -15,8 +15,11 @@ public class sum {
         }
         for(i=0;i<n;i++)
         {
-            sum=sum+a[i];
+            if(a[i]%2==0)
+            {
+                c++;
+            }
         }
-        System.out.println("sum of elements:"+ sum);
+        System.out.println("total even numbers are:"+c);
     }
 }
