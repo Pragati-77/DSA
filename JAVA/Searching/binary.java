@@ -1,32 +1,37 @@
-package JAVA.Searching;
+// package JAVA.Searching;
 
 import java.util.Scanner;
 
 public class binary {
     public static void main(String[] args) {
-        Scanner sc= new Scanner(System.in);
-        System.out.println("enter no. of elements");
+        Scanner sc=new Scanner(System.in);
+        System.out.println("enter the no of elements in array");
         int n=sc.nextInt();
         int a[]=new int[n];
-        int i,flag=0;
-        System.out.println("enter elements");
+        int i,first,last,mid;
+        System.out.println("enter elments");
         for(i=0;i<n;i++)
         {
             a[i]=sc.nextInt();
         }
         System.out.println("enter element to be searched");
         int s=sc.nextInt();
-        for(i=0;i<n;i++)
-        {
-            if(a[i]==s)
-            {
-                flag=1;
-                break;
+        first=0;
+        last=n-1;
+        mid=(first+last)/2;
+        while (first <= last) {
+            mid = (first + last) / 2;
+
+            if (a[mid] == s) {
+                System.out.println("Element found at index: " + mid);
+                return;
+            } 
+            else if (s < a[mid]) {
+                last = mid - 1;
+            } 
+            else {
+                first = mid + 1;
             }
         }
-        if(flag==1)
-            System.out.println("element found at position:"+i);
-        else
-            System.out.println("element not found");
     }
 }
